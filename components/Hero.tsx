@@ -1,6 +1,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -23,6 +25,13 @@ const Hero = () => {
             <p className='text-center'>
               I am a software engineer with a passion for building web applications. I specialize in front-end development and have experience with a variety of technologies. I am currently looking for new opportunities and would love to chat with you about how I can help your team.
             </p>
+            <a href='#about'>
+              <MagicButton
+                title='Show my work'
+                icon={<FaLocationArrow/>}
+                position='right'
+              />
+            </a>
           </div>
         </div>
     </div>
